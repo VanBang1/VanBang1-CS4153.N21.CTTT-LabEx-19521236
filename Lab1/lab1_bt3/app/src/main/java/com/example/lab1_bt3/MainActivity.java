@@ -12,15 +12,14 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
 
     private Button mButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-     final Button mButton = (Button) findViewById(R.id.xemtime);
-     final AlertDialog ad=new AlertDialog.Builder(this).create();
+        final Button mButton = (Button) findViewById(R.id.xemtime);
+        final AlertDialog ad=new AlertDialog.Builder(this).create();
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
@@ -33,4 +32,5 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
 
